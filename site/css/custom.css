@@ -1,0 +1,51 @@
+.demo{
+  height: 50px;
+  background-color: yellow;
+}
+
+.by-aspect{
+  display: none;
+}
+
+.by-size{
+  display: none;
+}
+
+.by-size-appr{
+  display: none;
+}
+
+@media 
+ (aspect-ratio: 414/736),
+ (aspect-ratio: 375/667) 
+ {
+   .by-aspect{
+      display: block;
+      height: 50px;
+      background-color: orange;
+    }
+ }
+
+@media 
+ (width: 414px) and (height: 736px),
+ (width: 375px) and (height: 667px) 
+ {
+   .by-size{
+      display: block;
+      height: 50px;
+      background-color: green;
+    }
+ }
+
+@media 
+ (min-width: 410px) and (max-width: 420px) and
+   (min-height: 730px) and (max-height: 740px),
+ (min-width: 370px) and (max-width: 380px) and
+   (min-height: 660px) and (max-height: 674px)
+ {
+   .by-size-appr{
+      display: block;
+      height: 50px;
+      background-color: blue;
+    }
+ }
