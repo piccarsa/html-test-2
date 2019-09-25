@@ -15,3 +15,19 @@ body {
   text-align: center;
   border: 1px solid #8b0000;
 }
+
+.hidden{
+	display: none;
+}
+
+@media (max-width: 416px) and (max-height: 738px){
+	.ipv-shown{
+		display: block !important;
+	}
+}
+
+@media (max-width: 380px) and (max-height: 820px){
+	.ipxv-shown{
+		display: block !important;
+	}
+}
