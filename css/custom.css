@@ -24,19 +24,10 @@ body {
 	.ipv-shown{
 		display: block !important ;
 	}
-	.showme{
-		display: block !important ;
-		background-color: yellow;
-		
-	}
 }
 
 @media (max-width: 380px) and (max-height: 820px){
 	.ipxv-shown{
 		display: block !important;
-	}
-	.showme{
-		display: block !important ;
-		background-color: blue;
 	}
 }
