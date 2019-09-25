@@ -8,7 +8,11 @@
   <body>
     <div class="container">
       <div class="always-show box">
-        This is always visible
+        This is always visible<br/>
+		document.documentElement.clientWidth: <span id="aw"></span><br/>
+		document.documentElement.clientHeight: <span id="ah"></span><br/>
+		window.innerWidth: <span id="ww"></span><br/>
+		window.innerHeight: <span id="wh"></span>
       </div>
       <div class="hidden ipv-shown box">
         iPhone 6/7/8 Vertical
@@ -20,5 +24,12 @@
         iPhone X Vertical
       </div>
     </div>
+	
+	<script>
+		document.getElementById("aw").innerHTML = document.documentElement.clientWidth;
+		document.getElementById("ah").innerHTML = document.documentElement.clientHeight;
+		document.getElementById("ww").innerHTML = window.innerWidth;
+		document.getElementById("wh").innerHTML = window.innerHeight;
+	</script>
   </body>
 </html>
